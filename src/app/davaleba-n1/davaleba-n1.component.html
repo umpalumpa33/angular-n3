@@ -1,0 +1,9 @@
+<h1>Source code version</h1>
+<button (click)="majorFunction()">New major version</button>
+<button (click)="minorFunction()">New minor version</button>
+<app-child-n1
+  [majorVersion]="majorVersion"
+  [minorVersion]="minorVersion"
+  [log]="parentLog"
+  (logChanged)="handleLogChanges($event)"
+></app-child-n1>
