@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { DavalebaN1Component } from './davaleba-n1/davaleba-n1.component';
 import { DavalebaN2Component } from './davaleba-n2/davaleba-n2.component';
 import { ChildN1Component } from './davaleba-n1/child-n1/child-n1.component';
-import { ChildN2Component } from './davaleba-n2/child-n2/child-n2.component';
+import { Child1Component } from './davaleba-n2/child1/child1.component';
+import { Child2Component } from './davaleba-n2/child2/child2.component';
+import { Child3Component } from './davaleba-n2/child3/child3.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ChildN2Component } from './davaleba-n2/child-n2/child-n2.component';
     DavalebaN1Component,
     DavalebaN2Component,
     ChildN1Component,
-    ChildN2Component
+    Child1Component,
+    Child2Component,
+    Child3Component
   ],
   imports: [
     BrowserModule,

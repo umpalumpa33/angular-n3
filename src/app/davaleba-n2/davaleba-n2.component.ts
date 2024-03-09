@@ -12,4 +12,16 @@ export class DavalebaN2Component implements OnInit {
   ngOnInit(): void {
   }
 
+  isButtonDisabled: boolean = false;
+  agree = 0;
+  disagree = 0;
+
+  updateAgreeCount(count: number) {
+    this.agree += count;
+  }
+
+  updateDisagreeCount(count: number) {
+    this.disagree += count;
+  }
+
 }
