@@ -18,11 +18,11 @@ export class Child1Component implements OnInit {
 
   agreeClick() {
     this.isButtonDisabled = true;
-    this.agreeCountChange.emit(1); // Emit the change to the parent
+    this.agreeCountChange.emit(1); 
   }
 
   disagreeClick() {
     this.isButtonDisabled = true;
-    this.disagreeCountChange.emit(1); // Emit the change to the parent
+    this.disagreeCountChange.emit(1); 
   }
 }
