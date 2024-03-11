@@ -11,5 +11,13 @@ export class DavlaebaN4Component implements OnInit {
 
   ngOnInit(): void {
   }
+  trueorfalse = false
+  conditionp = true
+  maincontent = false
 
+  changeEverything(){
+    this.trueorfalse = !this.trueorfalse
+    this.conditionp = !this.conditionp
+    this.maincontent = !this.maincontent
+  }
 }

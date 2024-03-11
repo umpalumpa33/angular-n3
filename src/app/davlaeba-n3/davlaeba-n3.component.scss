@@ -1,0 +1,28 @@
+.flex,
+.green_div,
+.yellow_div,
+.cyan_div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.redClass {
+  background-color: red;
+}
+
+.greenClass {
+  background-color: green;
+}
+
+.yellowClass {
+  background-color: yellow;
+}
+
+.cyanClass {
+  background-color: cyan;
+}
+
+.violetClass {
+  background-color: violet;
+}
