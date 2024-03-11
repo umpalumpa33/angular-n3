@@ -1,1 +1,28 @@
-<p>davlaeba-n2 works!</p>
+<h1>My First Attribute Directive</h1>
+
+<p style="font-weight: bold">Pick a highlight color</p>
+
+<div class="flex">
+  <div class="green_div">
+    <input type="radio" (click)="changeHover(greenClass)" />
+    <p>Green</p>
+  </div>
+  <div class="yellow_div">
+    <input type="radio" (click)="changeHover(yellowClass)" />
+    <p>Yellow</p>
+  </div>
+  <div class="cyan_div">
+    <input type="radio" (click)="changeHover(cyanClass)" />
+    <p>Cyan</p>
+  </div>
+</div>
+
+<p
+  [ngStyle]="ngColor"
+  [ngClass]="colorClass"
+  (mouseover)="setHover(true)"
+  (mouseout)="setHover(false)"
+  style="width: fit-content"
+>
+  Highlight me!
+</p>
