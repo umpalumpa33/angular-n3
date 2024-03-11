@@ -1,0 +1,66 @@
+<h1>NgSwitch Binding</h1>
+
+<p>pick your favorite item</p>
+<div class="teapot_div">
+  <input
+    type="radio"
+    name="Teapot"
+    (click)="selectItem('Teapot')"
+    [(ngModel)]="item"
+  />
+  <p>Teapot</p>
+</div>
+<div class="lamp_div">
+  <input
+    type="radio"
+    name="Lamp"
+    (click)="selectItem('Lamp')"
+    [(ngModel)]="item"
+  />
+  <p>Lamp</p>
+</div>
+<div class="phone_div">
+  <input
+    type="radio"
+    name="Phone"
+    (click)="selectItem('Phone')"
+    [(ngModel)]="item"
+  />
+  <p>Phone</p>
+</div>
+<div class="tv_div">
+  <input
+    type="radio"
+    name="Television"
+    (click)="selectItem('TV')"
+    [(ngModel)]="item"
+  />
+  <p>Television</p>
+</div>
+<div class="fishbowl_div">
+  <input
+    type="radio"
+    name="Fishbowl"
+    (click)="selectItem('Fishbowl')"
+    [(ngModel)]="item"
+  />
+  <p>Fishbowl</p>
+</div>
+
+<div [ngSwitch]="item">
+  <div *ngSwitchCase="'Teapot'">
+    <p>ჩაინიკი თუ როგორაა ქართულად?</p>
+  </div>
+  <div *ngSwitchCase="'Lamp'">
+    <p>ლამპიაშვილი ლევანი</p>
+  </div>
+  <div *ngSwitchCase="'Phone'">
+    <p>ფეხი რო გტკივა ტელეფონის ბრალია</p>
+  </div>
+  <div *ngSwitchCase="'TV'">
+    <p>ტელევიზორთან ახლოს ნუზიხარ თვალები გეტკინება</p>
+  </div>
+  <div *ngSwitchCase="'Fishbowl'">
+    <p>მეც თევზები ვარ ჰოროსკოპით სასიამოვნოა</p>
+  </div>
+</div>

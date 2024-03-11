@@ -1,0 +1,9 @@
+.teapot_div,
+.lamp_div,
+.phone_div,
+.tv_div,
+.fishbowl_div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChildN1Component } from './child-1.component';
+import { DavlaebaN1Component } from './davlaeba-n1.component';
 
-describe('ChildN1Component', () => {
-  let component: ChildN1Component;
-  let fixture: ComponentFixture<ChildN1Component>;
+describe('DavlaebaN1Component', () => {
+  let component: DavlaebaN1Component;
+  let fixture: ComponentFixture<DavlaebaN1Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChildN1Component ]
+      declarations: [ DavlaebaN1Component ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChildN1Component);
+    fixture = TestBed.createComponent(DavlaebaN1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
