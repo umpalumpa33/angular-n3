@@ -14,6 +14,7 @@ export class DavlaebaN4Component implements OnInit {
   trueorfalse = false
   conditionp = true
   maincontent = false
+  
 
   changeEverything(){
     this.trueorfalse = !this.trueorfalse

@@ -1,6 +1,19 @@
-<p>the condition is currently <label *ngIf="trueorfalse">True</label>.</p>
-<button (click)="changeEverything()">
-  Toggle condition to {{ conditionp }}
+<p>
+  the condition is currently
+  <label *ngIf="trueorfalse" id="first_true">True</label>
+  <label *ngIf="!trueorfalse" id="first_false">False</label>.
+</p>
+<button id="button" (click)="changeEverything()">
+  <label *ngIf="conditionp" id="second_true">Toggle condition to true</label>
+  <label *ngIf="!conditionp" id="second_false">Toggle condition to false</label>
 </button>
 
-<p>{{ maincontent }}</p>
+<p>
+  <label *ngIf="!maincontent" id="main_false"
+    >(A) This paragraph is displayed because the condition is false.</label
+  >
+  <label *ngIf="maincontent" id="main_true">
+    (B) Although the condition is true, this paragraph is displayed because
+    myUnless is set to false.</label
+  >
+</p>
